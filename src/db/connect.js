@@ -16,19 +16,3 @@ const connectDB = async () => {
 };
 
 export default connectDB;
-
-//(async () => {
-//   try {
-//     await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`);
-//     app.on("error", () => {
-//       console.log("ERROR:Express not able to connect to db", error);
-//       throw error;
-//     });
-//     app.listen(process.env.PORT, () => {
-//       console.log(`Listening on PORT ${process.env.PORT}`);
-//     });
-//   } catch (error) {
-//     console.log("Error", error);
-//     throw err;
-//   }
-// })();
